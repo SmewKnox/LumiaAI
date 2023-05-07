@@ -142,7 +142,7 @@ def search_extract(): #this AI call helps extract what you want to be searched
         model=model,
         prompt=f"""given a sentence only say what would be typed into the Google search bar.
          For example 'do me a favor and search for pictures of deer' return 'deer pictures' or
-          'set a time for 5 minutes' return '5 minute timer':\n{command}.""",  # prompt on every call might be hindering memory
+          'set a time for 5 minutes' return '5 minute timer':\n{command}.""", 
         temperature=temperature,
         max_tokens=10,
         top_p=top_p,
